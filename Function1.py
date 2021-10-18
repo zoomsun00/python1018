@@ -8,7 +8,7 @@ def setValues(a):
 result = setValues(5)
 print(result)
 
-def swaq(x,y):
+def swap(x,y):
     return y,x
 
 #호출
