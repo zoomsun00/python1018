@@ -54,4 +54,3 @@ def union(*ar):
 #호출
 print( union("HAM", "EGG"))
 print( union(("HAM", "EGG" , "SPAM") )
-)
