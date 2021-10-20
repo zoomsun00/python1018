@@ -61,5 +61,6 @@ f.write("새로운 데이터\n")
 f.close()
 
 # 피일 읽기
+# 다중라인 주석 처리: ctrl + /
 f = open("c:\\work\\domo.txt", "rt", encoding="utf-8")
 print( f.read() )
