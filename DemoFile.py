@@ -38,10 +38,28 @@ print( f.read() )
 print( f.tell() )
 f.seek(0)
 print("--한줄씩 읽기---")
-print( f.readline() )
-print( f.readline() )
+print( f.readline() , end="" )
+print( f.readline() , end="" )
+print( f.readline() , end="" )
 f.seek(0)
 print("--list로 받기---")
 result = f.readlines()
 print( result )
 f.close()
+
+
+for item in result:
+    # 기존 문자열에서 \n을 찾으면 삭제(치환)
+    print(item.replace("\n","") )
+
+
+# 기존 파일에 첨부
+#f = open("c:\\work\\domo.txt", "a+", encoding="utf-8")
+#덮어 쓰기
+f = open("c:\\work\\domo.txt", "wt", encoding="utf-8") 
+f.write("새로운 데이터\n")
+f.close()
+
+# 피일 읽기
+f = open("c:\\work\\domo.txt", "rt", encoding="utf-8")
+print( f.read() )
