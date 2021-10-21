@@ -20,5 +20,5 @@ chdir("c:\\work")
 # dir, ls 명령어
 import glob
 print ( glob.glob("c:\\work\\*.py"))
-for item in result:
-    print(item)
+#for item in result:
+#    print(item)
